@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO対策：冬休み期間用のキーワードを設定 -->
+    <title>冬休みまるのおうちのご案内｜倉敷市片島町の学習塾 まるのおうち</title>
+    
+    <meta name="description" content="倉敷市片島町の小学生向け学習塾「まるのおうち」冬休み期間（12月25日〜1月6日）の利用方法や開室時間、予約ルールのご案内です。冬休み期間中は追加料金なしで90分授業をお選びいただけます。">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body { margin: 0; padding: 0; background-color: #F7DDE8; background-image: radial-gradient(#E8C7D5 1.5px, transparent 1.5px); background-size: 35px 35px; font-family: 'Zen Maru Gothic', sans-serif; color: #444; min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; -webkit-text-size-adjust: 100%; }
+        .sp-br { display: none; }
+
+        /* メインコンテナ（中央1カラムでスッキリ配置） */
+        .main-container { 
+            width: 100%; 
+            max-width: 760px; 
+            padding: 50px 40px; 
+            box-sizing: border-box; 
+            background: rgba(255, 255, 255, 0.95); 
+            border-radius: 40px; 
+            box-shadow: 0 15px 45px rgba(216, 194, 168, 0.2); 
+            backdrop-filter: blur(8px); 
+            margin: 40px 20px; 
+            position: relative; 
+        }
+        
+        /* ヘッダーバッジ */
+        .header-labels { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+        .page-badge { display: inline-block; background: #D84B81; color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; white-space: nowrap; }
+        
+        .page-title { font-size: 1.8rem; color: #D84B81; margin: 0 0 35px 0; font-weight: 700; line-height: 1.4; }
+
+        /* セクション共通 */
+        .content-section { margin-bottom: 35px; }
+        .content-section p { line-height: 1.8; font-size: 1rem; margin: 0 0 15px 0; }
+
+        h2 { font-size: 1.25rem; color: #7A6A2F; margin: 0 0 15px 0; display: flex; align-items: center; gap: 8px; font-weight: 600; }
+        h2::before { content: '🏠'; font-size: 1.1rem; }
+
+        /* 特徴・リストのフレーム */
+        .maru-frame { width: 100%; padding: 25px 25px; border: 3px solid #D8C2A8; border-radius: 30px; background-color: #FAF6F2; margin: 20px 0; box-sizing: border-box; }
+        .maru-frame ul { padding-left: 1.2em; margin: 0; font-size: 1rem; line-height: 1.8; color: #444; }
+        .maru-frame li { margin-bottom: 12px; }
+        .maru-frame li:last-child { margin-bottom: 0; }
+
+        /* 注意書きアラート */
+        .alert-box { background-color: #FFF0F2; border-left: 6px solid #D84B81; padding: 15px 20px; border-radius: 4px 15px 15px 4px; margin: 15px 0; }
+        .alert-box .alert-title { font-weight: bold; color: #D84B81; margin-bottom: 5px; display: flex; align-items: center; gap: 5px; }
+        .alert-box p { margin: 0; font-size: 0.95rem; line-height: 1.6; }
+
+        /* スケジュール案内 */
+        .schedule-box { background: #FFFBE6; border: 1px solid #F0E6A5; padding: 20px; border-radius: 20px; margin-top: 15px; }
+        .schedule-title { font-weight: bold; color: #7A6A2F; margin-bottom: 6px; font-size: 1.05rem; }
+
+        /* 時間割リスト */
+        .time-list { list-style: none; padding: 0; margin: 10px 0 0 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 15px; }
+        .time-list li { background: #fff; border: 1px solid #F0E6A5; padding: 8px 14px; border-radius: 12px; font-size: 0.95rem; display: flex; justify-content: space-between; align-items: center; }
+        .slot-badge { background: #FAF6F2; color: #7A6A2F; border: 1px solid #D8C2A8; font-size: 0.8rem; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+
+        /* ご利用区分ごとのカード */
+        .plan-card { background: #fff; border: 2px solid #EADCC9; border-radius: 20px; padding: 20px; margin-bottom: 15px; }
+        .plan-card:last-child { margin-bottom: 0; }
+        .plan-card-title { font-weight: bold; color: #D84B81; font-size: 1.08rem; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+        .plan-card p { margin: 0 0 10px 0; font-size: 0.96rem; line-height: 1.7; }
+        .plan-card p:last-child { margin-bottom: 0; }
+
+        /* カード内の補足フレーム */
+        .inner-frame { padding: 15px 18px; margin: 12px 0; border-radius: 18px; border: 2px solid #D8C2A8; background-color: #FAF6F2; }
+        .inner-frame ul { padding-left: 1.2em; margin: 0; font-size: 0.94rem; line-height: 1.7; color: #444; }
+        .inner-frame li { margin-bottom: 8px; }
+        .inner-frame li:last-child { margin-bottom: 0; }
+
+        /* 予約メニューバッジ一覧 */
+        .menu-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 12px 0; }
+        .menu-tag-ng { background: #fff; border: 1px solid #D84B81; color: #D84B81; padding: 4px 12px; border-radius: 15px; font-size: 0.88rem; font-weight: 500; text-decoration: line-through; }
+
+        /* 予約セクション */
+        .reserve-section { border: 3px dashed #D84B81; background: #FFF9F9; border-radius: 30px; padding: 30px 25px; text-align: center; margin-top: 40px; }
+        .reserve-title { font-size: 1.2rem; color: #D84B81; font-weight: bold; margin-bottom: 12px; }
+
+        /* スマホレスポンシブ対応 */
+        @media (max-width: 768px) {
+            .sp-br { display: block; }
+            .sp-hide { display: none; }
+            .main-container { padding: 32px 18px; margin: 16px 12px; border-radius: 28px; }
+            .page-title { font-size: 1.45rem; text-align: center; word-break: keep-all; margin-bottom: 28px; }
+            .header-labels { justify-content: center; }
+            
+            h2 { font-size: 1.15rem; }
+            .content-section p { font-size: 0.96rem; }
+            
+            .maru-frame { padding: 18px 15px; border-radius: 22px; }
+            .maru-frame ul { font-size: 0.95rem; }
+            
+            .schedule-box { padding: 16px 15px; }
+            .time-list { grid-template-columns: 1fr; }
+            
+            .plan-card { padding: 16px 14px; }
+            .inner-frame { padding: 13px 14px; }
+            .alert-box { padding: 13px 15px; }
+            
+            .reserve-section { padding: 24px 15px; border-radius: 24px; }
+            .reserve-title { font-size: 1.08rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        
+        <div class="header-labels">
+            <div class="page-badge">12月25日〜1月6日</div>
+        </div>
+
+        <h1 class="page-title">冬休みまるのおうちのご案内</h1>
+
+        <!-- 導入 -->
+        <div class="content-section">
+            <p>冬休み期間中の利用方法や予約ルールについてご案内します。</p>
+        </div>
+
+        <!-- セクション1：期間・お休み -->
+        <div class="content-section">
+            <h2>冬休み期間とスケジュール</h2>
+            <div class="schedule-box">
+                <div class="schedule-title">📅 冬休み期間</div>
+                <p style="margin-bottom: 15px; font-weight: 500;">12月25日 〜 1月6日</p>
+
+                <div class="schedule-title">🛌 教室授業のお休み</div>
+                <p style="margin-bottom: 8px;">12月27日・31日<span class="sp-hide"> ／ </span><br class="sp-br">1月1日・2日・3日</p>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 0;">※12月26日(土)は「出張まるのおうち（10:00〜）」を実施します。</p>
+            </div>
+        </div>
+
+        <!-- セクション2：授業内容・時間 -->
+        <div class="content-section">
+            <h2>冬休み期間中の授業について</h2>
+            <p>冬休み期間中は、<strong>60分授業または90分授業</strong>をお選びいただけます。</p>
+            <div class="maru-frame">
+                <ul>
+                    <li>通常は90分授業オプション料金が必要ですが、冬休み期間中は<strong>追加料金なしで90分授業をご利用いただけます。</strong></li>
+                    <li>60分授業・90分授業ともに料金は同じです。</li>
+                    <li><strong>2コマ連続でのご予約はできません。</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- セクション3：開室時間 -->
+        <div class="content-section">
+            <h2>開室時間（各日共通）</h2>
+            <div class="schedule-box">
+                <div class="schedule-title">⏰ 時間割・定員枠</div>
+                <ul class="time-list">
+                    <li><span>① 9:00〜10:30</span><span class="slot-badge">2枠</span></li>
+                    <li><span>② 10:45〜12:15</span><span class="slot-badge">2枠</span></li>
+                    <li><span>③ 13:30〜15:00</span><span class="slot-badge">2枠</span></li>
+                    <li><span>④ 15:15〜16:45</span><span class="slot-badge">2枠</span></li>
+                    <li><span>⑤ 17:00〜18:30</span><span class="slot-badge">2枠</span></li>
+                    <li><span>⑥ 18:45〜20:15</span><span class="slot-badge">2枠</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- セクション4：ご利用区分ごとの予約方法 -->
+        <div class="content-section">
+            <h2>ご利用区分ごとの予約方法</h2>
+
+            <div class="plan-card">
+                <div class="plan-card-title">📌 週2固定制をご利用の方へ</div>
+                <p><strong>11月21日〜12月11日は先行予約期間</strong>です。</p>
+                <p>冬休み期間中の受講日時をご希望の場合は、<strong>12月11日まで</strong>にチャットにてご連絡ください。ご希望の日時を確認し、こちらで予約をお取りします。</p>
+                
+                <div class="inner-frame">
+                    <ul>
+                        <li><strong>月・木コースの方：</strong>12/24(木)・1/4(月)の<strong>計2回分</strong>のご予約が必要です。</li>
+                        <li><strong>火・金コースの方：</strong>12/25(金)・12/29(火)・1/5(火)の<strong>計3回分</strong>のご予約が必要です。</li>
+                    </ul>
+                    <p style="font-size: 0.9rem; color: #555; margin: 10px 0 0 0; line-height: 1.6;">
+                        💡 <strong>月・木コースのお子さまへ</strong><br>
+                        祝日お休み分の調整（<strong>3回分</strong>）も<strong>3月31日まで</strong>に行っていただく必要があります。冬休み期間中の開室日を利用して、あわせて調整していただくことも可能ですので、ぜひご検討ください！
+                    </p>
+                </div>
+
+                <p style="font-size: 0.9rem; color: #666;">※12月11日までにご連絡がない場合は、12月12日の一般予約開始後に、都度予約の方と同様にご予約をお願いいたします。</p>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-card-title">📌 都度予約・学校復帰サポートをご利用の方へ</div>
+                <p><strong>12月12日より</strong>予約受付を開始します。ご希望の日時をお選びのうえ、ご予約ください。</p>
+                <p style="font-size: 0.9rem; color: #666;">※週2固定制の方の予約が12月11日より早くすべて決定した場合は、12月12日を待たずに予約受付を開始いたします。</p>
+                <div class="alert-box" style="margin-top: 12px; margin-bottom: 0;">
+                    <div class="alert-title"><i class="fas fa-info-circle"></i> 学校復帰サポートをご希望の場合</div>
+                    <p><strong>（残2）</strong>と表示されている日時をご予約ください。<br>
+                    学校復帰サポートのご予約が入った場合は、学習環境確保のため、こちらで残りの1枠を閉じます。そのため、<strong>（残1）と表示されている日時は学校復帰サポートとしてご利用いただけません。</strong></p>
+                </div>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-card-title">🚗 出張まるのおうちについて</div>
+                <p><strong>12月26日(土) 10:00〜</strong>の1枠にて実施します。予約画面の該当枠からご予約ください。</p>
+            </div>
+        </div>
+
+        <!-- セクション5：各種ご相談 -->
+        <div class="content-section">
+            <h2>保護者相談・初回無料相談について</h2>
+            <div class="maru-frame" style="background: #fff;">
+                <ul>
+                    <li><strong>保護者相談について</strong><br>保護者相談をご希望の場合は、チャットにてご連絡ください。</li>
+                    <li><strong>初回無料相談について</strong><br>まるのおうちでは、冬休み期間中も初回無料相談を受け付けています。「どんな場所かな？」「うちの子に合うかな？」と思われている方は、ぜひお気軽にご相談ください。<br>ご希望の場合はチャットにてご連絡ください。日程は空いている時間帯で調整させていただきます。</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- セクション6：予約時のご注意 -->
+        <div class="reserve-section">
+            <div class="reserve-title"><i class="fas fa-exclamation-triangle"></i> ご予約時のご注意</div>
+            <p style="font-size: 0.96rem; line-height: 1.7; margin-bottom: 10px;">
+                冬休み期間中のご予約は、すべて<strong>「冬休みまるのおうち」</strong>からお願いいたします。<br>
+                <span style="font-size: 0.86rem; color: #666;">（※予約メニューに「冬休みまるのおうち」が表示されるのは<strong>12月12日以降</strong>となります）</span>
+            </p>
+            <div class="menu-tags">
+                <span class="menu-tag-ng">通常予約</span>
+                <span class="menu-tag-ng">学校復帰サポート</span>
+                <span class="menu-tag-ng">日曜出張まるのおうち</span>
+                <span class="menu-tag-ng">保護者相談</span>
+            </div>
+            <p style="font-size: 0.9rem; color: #D84B81; font-weight: bold; margin-bottom: 0;">
+                ※上記のメニューからはご予約いただけませんので、ご注意ください。
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
